@@ -14,11 +14,12 @@
 # <fs>			<mountpoint>	<type>		<opts>		<dump/pass>
 
 # NOTE: If your BOOT partition is ReiserFS, add the notail option to opts.
-UUID="FE78-B699"		/boot		vfat		noauto,noatime	1 2
+UUID="XXXX-YYYY"		/boot		vfat		noauto,noatime	1 2
 /mnt/1GB-swapfile		none		swap		defaults	0 0
 /dev/mapper/cryptvg-root	/		ext4		noatime,errors=remount-ro	0 1
 /dev/mapper/cryptvg-home	/home		ext4		defaults,noatime	0 0
 proc				/proc		proc		nosuid,nodev,noexec,hidepid=2,gid=wheel	0 0
-/dev/sda4			/mnt/Win81	ntfs-3g		noauto,ro	0 0
-/dev/sda5			/media/Data	ntfs-3g		noauto,noatime,nls=utf8,locale=zh_CN.utf8,uid=zachary,gid=users,dmask=022,fmask=133	0 0
-/dev/sda6			/media/Misc	ntfs-3g		noatime,nls=utf8,locale=zh_CN.utf8,uid=zachary,gid=users,dmask=022,fmask=133	0 0
+/dev/sda4			/mnt/xxxxx	ntfs-3g		noauto,ro	0 0
+/dev/sda5			/media/xxxxx	ntfs-3g		noauto,noatime,uid=yyyyyy,gid=users,dmask=022,fmask=133	0 0
+/dev/sda6			/media/xxxxx	ntfs-3g		noatime,nls=utf8,utf8,uid=yyyyyy,gid=users,dmask=022,fmask=133	0 0
+# sda6 add two options 'nls=utf8' and 'utf8' compared to sda5. While ntfs-3g defaults to utf8. This two options do not make a difference as long as system 'locale' is utf8.
