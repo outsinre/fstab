@@ -1,4 +1,4 @@
-# gentoo-fstab-backup
-Gentoo System /etc/fstab backup
+1. Gentoo System /etc/fstab backup
+2. 'DO-NOT-GIT.fstab' is symbolic link to working /etc/fstab.
 
-Backup for reference
+    Put it in '.gitignore"
