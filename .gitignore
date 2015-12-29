@@ -1,3 +1,3 @@
-# 'DO-NOT-GIT.fstab' is symbolic link to working /etc/fstab. DO NOT push it to GitHub!
+# 'working.fstab' is symbolic link to working /etc/fstab. DO NOT push it to GitHub!
 
-DO-NOT-GIT.fstab
+working.fstab
