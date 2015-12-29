@@ -22,5 +22,5 @@ UUID="ABCD-EFGH"		/boot		vfat		noauto,noatime	1 2
 proc				/proc		proc		nosuid,nodev,noexec,hidepid=2,gid=wheel	0 0
 /dev/sdaX			/mnt/Win81	ntfs-3g		noauto,ro	0 0
 /dev/sdaY			/media/Data	ntfs-3g		noauto,noatime,uid=username,gid=users,dmask=022,fmask=133	0 0
-# sdaY adds two options 'nls=utf8' and 'utf8' compared to sdaX. While ntfs-3g defaults to utf8. This two options do not make a difference as long as system 'locale' is utf8.
-/dev/sda6			/media/Misc	ntfs-3g		noatime,nls=utf8,utf8,uid=username,gid=users,dmask=022,fmask=133	0 0
+# sdaZ adds two options 'nls=utf8' and 'utf8' compared to sdaY. While ntfs-3g defaults to utf8. This two options do not make any difference as long as system 'locale' is utf8.
+/dev/sdaZ			/media/Misc	ntfs-3g		noatime,nls=utf8,utf8,uid=username,gid=users,dmask=022,fmask=133	0 0
